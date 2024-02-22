@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,intial-scaled=1.0">
+        <title>Packgage</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/36af12e56f.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="cont-field">
+            <form action="pack.php" method="post">
+                <h2>Basic Package</h2>
+                <div class="pk">
+                    <h3>Wedding Planning Starts Here</h3>
+                <input type="text" class="pack" placeholder="Name" name="names">
+                    <input type="email" class="pack" placeholder="Email" name="em">
+                    <input type="type" class="pack" placeholder="Phone" name="num">
+                    <select class="pack" name="opt">
+                        <option selected disabled>Choose a package</option>
+                        <option name="opt">BASIC</option>
+                        <option name="opt">STANDARD</option>
+                        <option name="opt">PREMEIUM</option>
+                    </select>
+
+                    <input type="text" class="mess" min="2023-01-01" max="2050" placeholder="Wedding Date" onfocus="(this.type='date')" name="dt">
+                    <button type="submit">BOOK NOW</button>
+                    
+                    
+                   
+                    <style>
+                       .cont-field{ 
+                        width:100vw;
+                        height: 100vh;
+                        background-color: #fc036b;
+                        color:#fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;  
+                    }
+   .cont-field::before{
+    content:"";
+    background-color: #fff;
+    height:100%;
+    width:100%;
+    border-radius: 0 50%;
+}
+
+form{
+    position:absolute;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border:1px solid #fc036b;
+    width:33%;
+    border:2px solid #fc036b;
+    
+}
+form h3{
+    text-align: center;
+    color:#fc036b;
+    margin-bottom: 20px;
+}
+input{
+    border:0;
+    margin:5px;
+    height:45pt;
+    padding: 5px;
+    outline:none;
+    background:#eaeaea;
+    font-size: 20px;
+    border:1px solid #fc036b;
+}
+ select{
+    border:0;
+    margin:5px;
+    height:45pt;
+    padding: 5px;
+    outline:none;
+    background:#eaeaea;
+    font-size: 20px;
+    border:1px solid #fc036b;
+
+}
+
+form button{
+    background: #fff;
+    color:#fc036b;
+    border:1px solid #fc036b;
+    padding:12px;
+    font-size:16px;
+    outline:none;
+    cursor:pointer;
+    width:40%;
+    font-weight: bold;
+    margin:20px auto 0;
+    border-radius:25px;
+    transition:all.5s ease-in;
+    
+
+}
+form button:hover{
+    border:1px solid #fc036b;
+    background:#fc036b;
+    color:white;
+}
+.one-check{
+    padding:15px;
+}
+.field{
+    border-radius: 8px;
+}   
+.mylist{
+    width:600px;
+    max-width: 1200px;
+    height: 50vh;
+    padding:0 px;
+    margin:100px auto;
+    border:1px solid #bbb;
+}                    
+.mylist li{
+    list-style: none;
+    background: #eee;
+    border-top:1px solid #ccc;
+    padding:40px 30px;
+    cursor: pointer;
+}
+.mylist h3{
+    text-align: left;
+    color:#fc036b;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+</style>
+</div>
+</form>
+</div>
+
+
+</body>
+</html>
+                    

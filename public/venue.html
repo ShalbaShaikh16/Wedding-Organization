@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Venue</title>
+    </head>
+    <body>
+        <div class="ven">
+        <h3>Venue</h3>
+        </div>
+        <div class="venue-list">
+            <div class="venue-box">
+                <img src="jaipur.jpeg" alt="img">
+                <div class="ven-info">
+                    <h2>JAIPUR</h2>
+                    <p>The Chomu Palace</p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="mumbai.jpeg" alt="img">
+                <div class="ven-info">
+                    <h2>MUMBAI</h2>
+                    <p>The Taj Mahal Palace</p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="mysore.jpeg" alt="img">
+                <div class="ven-info">
+                    <h2>MYSORE</h2>
+                    <p>The Convention Banquet Hall </p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="goa.jpeg" alt="img">
+                <div class="ven-info">
+                    <h2>GOA</h2>
+                    <p>Beach side Weddings</p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="hyderabad.jpeg" alt="img">
+                <div class="ven-info">
+                    <h2>HYDERABAD</h2>
+                    <p>King's Palace</p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="Pune.jpeg" alt="img">
+                <div class="ven-info">
+                    <h2>PUNE</h2>
+                    <p>Peppynite-Banquet Hall</p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+        </div>
+        <style>
+            .ven{
+                font-size: 35px;
+                color:#fc036b;
+                text-align: center;
+            }
+            .venue-list{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .venue-list .venue-box{
+                flex:1 2 30rem;
+                margin:1rem;
+                position: relative;
+                border-radius: .6rem;
+                overflow: hidden;
+                height: 20rem;
+            }
+            .venue-list .venue-box img{
+                height: 100%;
+                width: 100%;
+                object-fit:cover;
+            }
+            .venue-list .venue-box .ven-info{
+                display: flex;
+                flex-flow:column;
+                align-items: center;
+                justify-content: center;
+                position:absolute;
+                top:0;
+                left:0;
+                height: 100%;
+                width: 100%;
+                color:#fff;
+                background: rgba(46,39,40,0.5);
+                transform: scale(1.5);
+                opacity: 1s ease;
+                transition: 1s ease;
+            }
+            .venue-list .venue-box:hover .ven-info{
+                transform: scale(1);
+                opacity: 1;
+            }
+            .venue-list .venue-box .ven-info h2{
+                font-size: 3rem;
+                letter-spacing: .1rem;
+            }
+            .venue-list .venue-box .ven-info p{
+                font-size: 2rem;
+                letter-spacing: .1rem;
+                color:#fc036b;
+            }
+        .btn{
+                background: #fff;
+                color:#fc036b;
+                border:1px solid #fc036b;
+                padding:10px;
+                font-size:12px;
+                outline:none;
+                cursor:pointer;
+                width:12%;
+                font-weight: bold;
+                margin:20px auto 0;
+                border-radius:10px;
+                transition:all.5s ease-in;
+            }
+
+        </style>
+                

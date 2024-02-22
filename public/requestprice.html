@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo pricing</title>
+        <script src="https://kit.fontawesome.com/36af12e56f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="reqprice">
+            <form action="rp.php" method="post">
+                <h2>Request Pricing</h2>
+                <p>Fill this form and they will contact you shortly. All the information provided will be treated confidentially.</p>
+                    <input type="text" class="Fd" placeholder="First Name" name="nm">
+                    <input type="text" class="Fd" placeholder="Last Name" name="lm">
+                    <input type="email" class="Fd" placeholder="Email" name="email">
+                    <input type="date" class="dt" min="2023-01-01" max="2050" placeholder="Wedding Date" name="dt">
+                    
+                    <textarea id="mess" placeholder="Ask anything..." class="textarea-field" rows="6" name="text"></textarea>
+                    <div class="para">
+                    <p>By clicking 'Send Request', you agree that your information will be shared and accept Weddo organization</p>
+                    </div>
+                    <button type="submit">Send Request</button>
+               </form>
+            </div>
+            <style>
+            .reqprice{
+                width:100%;
+                height: 100vh;
+                background-color: #fc036b;
+                color:#fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .reqprice::before{
+                content:"";
+                background-color: #fff;
+                height:100%;
+                width:100%;
+                border-radius: 0 50%;
+            }
+            .reqprice p{
+                font-size:16px;
+                color:#171616;
+                
+            }
+            
+            form{
+                position:absolute;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                border:1px solid #eaeaea;
+                width:28%;
+                height: 90vh;
+                border:2px solid #fc036b;
+                
+            }
+            form h2{
+                text-align: center;
+                color:#fc036b;
+                margin-bottom: 20px;
+            }
+            input{
+                border:0;
+                margin:5px;
+                height:18pt;
+                padding: 5px;
+                outline:none;
+                background:#eaeaea;
+                font-size: 20px;
+                border:1px solid #fc036b;
+            }
+            
+            .textarea-field{
+                border:2px solid;
+                border-radius: 6px;
+                margin:5px;
+                outline:none;
+                background:#eaeaea;
+                font-size: 20px;
+                height: 150px;
+                padding-top:15px;
+                border:1px solid #fc036b;
+            }
+            form button{
+                background: #fff;
+                color:#fc036b;
+                border:1px solid #fc036b;
+                padding:10px;
+                font-size:16px;
+                outline:none;
+                cursor:pointer;
+                width:40%;
+                font-weight: bold;
+                margin:10px auto 0;
+                border-radius:30px;
+                transition:all.5s ease-in;
+            }
+            form button:hover{
+                border:1px solid #fc036b;
+                background:#fc036b;
+                color:white;
+            }
+            .one-check{
+                padding:15px;
+            }
+            .field{
+                border-radius: 8px;
+            }
+            .para p{
+                font-size: 16px;
+                color:#666;
+            }
+            </style>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Message</title>
+        <script src="https://kit.fontawesome.com/36af12e56f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="inside">
+            <form action="message.php" method="post">
+                <h2>Message Vendor</h2>
+                    <input type="text" class="field" placeholder="First Name" name="name">
+                    <input type="text" class="field" placeholder="Last Name" name="lastnm">
+                    <input type="email" class="field" placeholder="Email" name="email">
+                    <input type="text" class="mess" min="2023-01-01" max="2050" placeholder="Wedding Date" onfocus="(this.type='date')" name="Dt">
+                    <select class="tab" name="option">
+                        <option selected disabled>No of Guest</option>
+                        <option name="option">51-100</option>
+                        <option name="option">101-150</option>
+                        <option name="option">150-250</option>
+                        <option name="option">250-350</option>
+                        <option name="option">350-450</option>
+                        <option name="option">450-500</option>
+                    </select>
+                    <textarea id="mess" placeholder="Introduce yourself..." class="textarea-field" rows="6" name="text"></textarea>
+                    <div class="para">
+                    <p>By clicking 'Send Request', you agree that your information will be shared with the vendor and used to create an account on Weddo.com</p>
+                    </div>
+                    <button type="submit">Send Request</button>
+               </form>
+            </div>
+            <style>
+    .inside{
+    width:100%;
+    height: 100vh;
+    background-color: #fc036b;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside::before{
+    content:"";
+    background-color: #fff;
+    height:100%;
+    width:100%;
+    border-radius: 0 50%;
+}
+
+form{
+    position:absolute;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border:1px solid #eaeaea;
+    width:28%;
+    border:2px solid #fc036b;
+    
+}
+form h2{
+    text-align: center;
+    color:#fc036b;
+    margin-bottom: 20px;
+}
+input{
+    border:0;
+    margin:5px;
+    height:18pt;
+    padding: 5px;
+    outline:none;
+    background:#eaeaea;
+    font-size: 20px;
+    border:1px solid #fc036b;
+}
+select{
+    border:0;
+    margin:5px;
+    height:45pt;
+    padding: 5px;
+    outline:none;
+    background:#eaeaea;
+    font-size: 20px;
+    border:1px solid #fc036b;
+}
+
+.textarea-field{
+    border:2px solid;
+    border-radius: 6px;
+    margin:5px;
+    outline:none;
+    background:#eaeaea;
+    font-size: 20px;
+    height: 150px;
+    padding-top:15px;
+    border:1px solid #fc036b;
+}
+form button{
+    background: #fff;
+    color:#fc036b;
+    border:1px solid #fc036b;
+    padding:10px;
+    font-size:16px;
+    outline:none;
+    cursor:pointer;
+    width:40%;
+    font-weight: bold;
+    margin:10px auto 0;
+    border-radius:30px;
+    transition:all.5s ease-in;
+}
+form button:hover{
+    border:1px solid #fc036b;
+    background:#fc036b;
+    color:white;
+}
+.one-check{
+    padding:15px;
+}
+.field{
+    border-radius: 8px;
+}
+.para p{
+    font-size: 16px;
+    color:rgb(55, 48, 48);
+}

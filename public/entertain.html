@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Entertainment</title>
+    </head>
+    <body>
+        <div class="event">
+        <h3> Wedding Entertainment</h3>
+        </div>
+        <div class="ent-list">
+            <div class="ent-box">
+                <img src="E1.jpeg" alt="img">
+                <div class="ent-info">
+                        <h2>Awaaz The Band</h2>
+                        <button class="btn"><a href="contact.html">Contact</button></a>
+                    </div>
+                </div>
+                <div class="ent-box">
+                    <img src="dance.jpeg" alt="img">
+                    <div class="ent-info">
+                            <h2>The Dance Crew</h2>
+                            <button class="btn"><a href="contact.html">Contact</button></a>
+                        </div>
+                    </div>
+                    <div class="ent-box">
+                        <img src="Djs.jpeg" alt="img">
+                        <div class="ent-info">
+                                <h2>Master Sound</h2>
+                                <button class="btn"><a href="contact.html">Contact</button></a>
+                            </div>
+                        </div>
+                        <div class="ent-box">
+                            <img src="singer.jpeg" alt="img">
+                            <div class="ent-info">
+                                    <h2>Singer</h2>
+                                    <button class="btn"><a href="contact.html">Contact</button></a>
+                                </div>
+                            </div>
+                        <style>
+                            .event{
+                font-size: 35px;
+                color:#fc036b;
+                text-align: center;
+            }
+            .ent-list{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .ent-list .ent-box{
+                flex:1 2 30rem;
+                margin:1rem;
+                position: relative;
+                border-radius: .6rem;
+                overflow: hidden;
+                height: 20rem;
+            }
+            .ent-list .ent-box img{
+                height: 100%;
+                width: 100%;
+                object-fit:cover;
+            }
+            .ent-list .ent-box .ent-info{
+                display: flex;
+                flex-flow:column;
+                align-items: center;
+                justify-content: center;
+                position:absolute;
+                top:0;
+                left:0;
+                height: 100%;
+                width: 100%;
+                color:#fff;
+                background: rgba(46,39,40,0.5);
+                transform: scale(1.5);
+                opacity: 1s ease;
+                transition: 1s ease;
+            }
+            .ent-list .ent-box:hover .ent-info{
+                transform: scale(1);
+                opacity: 1;
+            }
+            .ent-list .ent-box .ent-info h2{
+                font-size: 3rem;
+                letter-spacing: .1rem;
+            }
+            
+        .btn{
+                background: #fff;
+    color:#fc036b;
+    border:1px solid #fc036b;
+    padding:10px;
+    font-size:12px;
+    outline:none;
+    cursor:pointer;
+    width:12%;
+    font-weight: bold;
+    margin:20px auto 0;
+    border-radius:10px;
+    transition:all.5s ease-in;
+            }
+            .btn a{
+                color:#fc036b;
+            }
+
+                        </style>
+                        </html>

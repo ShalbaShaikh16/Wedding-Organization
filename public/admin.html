@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,intial-scaled=1.0">
+        <title>ADMIN</title>
+        <link rel="stylesheet" href="contact.css">
+        <script src="https://kit.fontawesome.com/36af12e56f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="admin">
+            <form action="admin.php" method="POST">
+                <h2>Admin Login</h2>
+                    <input type="email" class="fd" placeholder="Email" name="Adminemail">
+                    <input type="pass"   class="fd" placeholder="Password" name="Adminpass">
+                    <button type="submit" name="Login">Login</button>
+               </form>
+         </div>
+        
+         <style>
+    .admin{
+    width:100vw;
+    height: 100vh;
+    background-color: #fc036b;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .admin::before{
+    content:"";
+    background-color: #fff;
+    height:100%;
+    width:100%;
+    border-radius: 0 50%;
+    }
+    form{
+    position:absolute;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border:2px solid #fc036b;
+    width:29%;
+    
+}
+form h2{
+    text-align: center;
+    color:#fc036b;
+    margin-bottom: 20px;
+}
+input{
+    border:0;
+    margin:2px;
+    height:15pt;
+    padding: 5px;
+    outline:none;
+    background:#eaeaea;
+    font-size: 20px;
+    border:1px solid #fc036b;
+}
+form button{
+    background: #fff;
+    color:#fc036b;
+    border:1px solid #fc036b;
+    padding:12px;
+    font-size:16px;
+    outline:none;
+    cursor:pointer;
+    width:50%;
+    font-weight: bold;
+    margin:20px auto 0;
+    border-radius:30px;
+    transition:all.5s ease-in;
+}
+form button:hover{
+    border:1px solid #fc036b;
+    background:#fc036b;
+    color:white;
+}
+.one-check{
+    padding:15px;
+}
+.field{
+    border-radius: 8px;
+}
+
+</style>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,intial-scaled=1.0">
+        <title>Signin and Signup</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/36af12e56f.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+    .form-box{
+    width:600px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    padding:50px 60px 70px;
+    text-align: center;
+}
+.form-box h1{
+    font-size: 40px;
+    margin-bottom: 20px
+}
+.input-field{
+    width: 330px;
+    background:#eaeaea;
+    margin:15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#signupBtn{
+background-color:#fc036b; 
+color:white;
+}
+.acc p{
+    font-size: 20px;
+    color:#222;
+    margin-top: 25px;
+}
+.acc p a{
+    color:#fc036b;
+    
+}
+.btn-field{
+    border-radius: 5px;
+}
+</style>
+    <body>
+        <div class="cont">
+            <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form action="signup.php" method="post">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name" name="nm">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email" name="email">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" name="pass">
+                </div>
+                
+                </div>
+                <div class="btn-field">
+                    <input type="submit" id="signupBtn" value="Sign up">
+                </div>
+                <div class="acc">
+                    <p>Already a member?  <a href="login.html">Login Here</a></p>
+                </div>
+            </form>
+    </body>
+</html>
